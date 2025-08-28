@@ -1,0 +1,89 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 20px auto;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.search-bar {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+.stock-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #555;
+  cursor: pointer;
+}
+
+.product-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.product-table th,
+.product-table td {
+  padding: 10px;
+  text-align: left;
+}
+
+.category-row th {
+  font-weight: bold;
+  color: #1a73e8;
+  border-bottom: 2px solid #1a73e8;
+  padding-top: 15px;
+}
+
+.product-row td {
+  border-bottom: 1px solid #eee;
+}
+
+.out-of-stock {
+  color: #d93025;
+}
+
+/* Styles for the new images */
+.product-image {
+  width: 50px;
+  height: 50px;
+  object-fit: cover; /* This makes sure the image covers the area without stretching */
+  border-radius: 8px; /* Gives the images rounded corners */
+}
+
+.product-row td {
+  vertical-align: middle; /* Aligns the text vertically with the image */
+}
+
+.header-image {
+  width: 60px; /* Gives the image column a fixed width */
+}
